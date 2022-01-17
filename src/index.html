@@ -1,16 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./scss/style.scss">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oranienbaum&family=Roboto:wght@300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./scss/style.scss" />
+    <link rel="stylesheet" href="./scss/header.scss">
     <title>ToDo</title>
-</head>
-<body>
-    <div class="wrapper">
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eum asperiores fuga fugiat quod deserunt, iusto repudiandae optio aspernatur reprehenderit, a quam placeat corrupti eius. Molestias dolor similique voluptatibus quis ab!
-    </div>
+  </head>
+  <body>
+    <header class="header">
+        <div class="header__wrapper">
+            <div class="header__container container">
+                <nav class="header__nav nav">
+                    <div class="nav__logo">
+                        <a href="#" class="logo__link">TodoList</a>
+                    </div>
+                    <ul class="nav__menu menu">
+                        <li class="menu__link"><a href=""><i class="fab fa-linkedin-in"></i></a></li>
+                        <li class="menu__link"><a href="https://t.me/OlegZaicev"><i class="fab fa-telegram-plane"></i></a></li>
+                        <li class="menu__link"><a href="mailto:30oleg.zv94@gmail.com"><i class="fab fa-google-plus-g"></i></a></li>
+                    </ul>
+                </nav>
+                <div class="header__content header-content">
+                    <h2 class="header-content__title">
+                        Hi there!
+                    </h2>
+                    <div class="header-content__subtitle">People are very busy and stressful today. They need to keep many things in their mind. How about make your life a bit easier ? You can. Just click the link below.</div>
+                    <div class="header-content__button">
+                        <a href="#">Push me</a>
+                    </div>
+                </div>
+                <div class="header__aside header-aside">
+                    <div class="header-aside__link">
+                        <a href="https://github.com/oldremain"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
     <script type="module" src="./js/script.js"></script>
-</body>
+  </body>
 </html>

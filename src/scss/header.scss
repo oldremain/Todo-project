@@ -1,0 +1,128 @@
+.header {
+  height: 100vh;
+  padding: 40px 0;
+  background: #212121;
+}
+.header__wrapper {
+  position: relative;
+}
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav__logo {
+}
+.logo__link {
+  font-family: 'Oranienbaum', serif;
+  font-size: 50px;
+  line-height: 142%;
+  position: relative;
+  color: #eee6e6;
+  padding-left: 10px;
+}
+.logo__link::before {
+  content: '';
+  display: inline-block;
+  height: 10px;
+  width: 10px;
+  background: #eee6e6;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: -8px;
+  transform: translate(0, -50%);
+}
+.nav__menu {
+  display: flex;
+}
+.nav__menu > *:not(:last-child) {
+  margin-right: 30px;
+}
+.menu__link a {
+  font-size: 25px;
+  line-height: 142%;
+  color: #eee6e6;
+}
+
+//---------------------content---------------------//
+
+.header__content {
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 100px;
+}
+.header-content__title {
+  text-align: center;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 142%;
+  color: #eee6e6;
+}
+.header-content__subtitle {
+  text-align: center;
+  font-size: 20px;
+  line-height: 142%;
+  color: #eee6e6;
+  margin-bottom: 45px;
+}
+.header-content__button a {
+  padding: 15px 50px;
+  border-radius: 25px;
+  background: linear-gradient(to right, #f5a996, #f786e6);
+  font-size: 18px;
+  font-weight: 500;
+  color: #212121;
+  transition: 0.3s ease;
+  &::after {
+    content: '\f101';
+    font-family: 'Font Awesome 5 Free';
+    font-size: 15px;
+    font-weight: 600;
+    color: #212121;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 5px;
+    position: relative;
+    animation: row 1.5s ease infinite both;
+  }
+}
+@keyframes row {
+  0% {
+    left: 0;
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    left: 15px;
+    opacity: 0;
+  }
+}
+.header-content__button a:hover {
+  box-shadow: 0 0 8px #676568;
+}
+
+//----------------pseudo github-------------------//
+
+.header__aside {
+  position: absolute;
+  top: 35%;
+}
+.header-aside__link a {
+  color: #eee6e6;
+  font-size: 20px;
+  transform: translate(-100%, 0);
+}
+.header-aside__link::after {
+  margin: 10px auto 0;
+  content: '';
+  display: block;
+  height: 300px;
+  background: #eee6e6;
+  width: 1px;
+}

@@ -1,1 +1,13 @@
 @import './reset.scss';
+@import 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css';
+/* @import './header.scss'; */
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+}
+.container {
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
