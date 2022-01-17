@@ -53,24 +53,24 @@
                 <div class="todo__tabs tabs ">
                     <div class="tabs__item">My posts</div>
                     <div class="tabs__item">Create</div>
-                    <div class="tabs__item">Favorites</div>
+                    <div class="tabs__item tabs__item_fav">Favorites</div>
                 </div>
 
                 <form action="#" class="todo__form form">
                     <h2 class="form__title">Create new post</h2>
                     <div class="form__element">
                         <label for="title" class="label-title">Title</label>
-                        <input type="text" id="title">
+                        <input type="text" id="title" placeholder="Create a title">
                     </div>
                     <div class="form__element">
                         <label for="text" class="label-textarea">Text</label>
-                        <textarea name="#" id="text" cols="30" rows="10"></textarea>
+                        <textarea name="#" id="text" cols="30" rows="10" placeholder="Type text"></textarea>
                     </div>
                     <div class="form__element">
                         <label for="options" class="label-select">Choose type of post</label>
                         <select name="#" id="options">
-                            <option value="note" selected>Note</option>
-                            <option value="news">News</option>
+                                <option value="note" selected>Note</option>
+                                <option value="news">News</option>
                         </select>
                     </div>
                     <button class="form__button" type="submit">Create</button>

@@ -1,83 +1,98 @@
 //-------------------tabs------------------------//
 
 .todo {
-    padding: 60px 0;
+  padding: 60px 0;
 }
 .todo__wrapper {
 }
 .todo__tabs {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
 }
 .todo__tabs > *:not(:last-child) {
-    margin-right: 25px;
+  margin-right: 25px;
 }
 .tabs__item {
-    padding: 17px 24px;
-    border-radius: 30px;
-    background: #dddddd;
-    font-size: 18px;
-    color: #424242;
-    cursor: pointer;
+  padding: 17px 24px;
+  border-radius: 30px;
+  background: #eceaea;
+  font-size: 18px;
+  font-weight: 500;
+  color: #424242;
+  cursor: pointer;
+}
+.tabs__item_fav::after {
+  content: '\f004';
+  font-family: 'Font Awesome 5 Free';
+  font-size: 10px;
+  font-weight: 600;
+  color: #c032c5;
+  display: inline-block;
+  vertical-align: top;
+  margin-left: 5px;
 }
 
 //----------------------form--------------------//@at-root
 
 .todo__form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    max-width: 560px;
-    border-radius: 10px;
-    margin: 0 auto;
-    padding: 66px 60px;
-    background: linear-gradient(135deg, #EE9AE5, #5961F9);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  max-width: 560px;
+  border-radius: 10px;
+  margin: 0 auto;
+  padding: 66px 60px;
+  background: linear-gradient(135deg, #ee9ae5, #5961f9);
 }
 .form__title {
-    font-size: 20px;
-    font-weight: 500;
-    color: #454040;
-    margin-bottom: 20px;
-    align-self: center;
+  font-size: 23px;
+  font-weight: 500;
+  color: #454040;
+  margin-bottom: 20px;
+  align-self: center;
 }
 .form__element {
-    width: 100%;
+  width: 100%;
 }
 
 select,
 input,
 textarea {
-    width: 100%;
-    background: rgba(238, 230, 230, 0.4);
-    border-radius: 5px;
-    margin-bottom: 15px;
-    padding: 10px;
+  width: 100%;
+  background: rgba(238, 230, 230, 0.4);
+  border-radius: 5px;
+  margin-bottom: 15px;
+  padding: 10px;
 }
 
 textarea {
-    resize: none;
+  resize: none;
+}
+option {
+    font-size: 20px;
 }
 label {
-    display: block;
+  display: block;
 }
 
 .label-title,
 .label-textarea,
 .label-select {
-    font-size: 16px;
-    font-weight: 500;
-    color: #eee6e6;
-    margin-bottom: 5px;
+  font-size: 17px;
+  font-weight: 500;
+  color: #eee6e6;
+  margin-bottom: 5px;
 }
 
 .form__button {
-    width: 100%;
-    padding: 18px;
-    background: #23292B;
-    border-radius: 5px;
-    color: #dddddd;
-    font-size: 18px;
+  width: 100%;
+  padding: 18px;
+  background: #23292b;
+  border-radius: 5px;
+  color: #dddddd;
+  font-size: 18px;
 }
+
