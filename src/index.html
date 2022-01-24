@@ -11,70 +11,117 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./scss/style.scss" />
-    <link rel="stylesheet" href="./scss/header.scss">
-    <link rel="stylesheet" href="./scss/todo.scss">
+    <link rel="stylesheet" href="./scss/header.scss" />
+    <link rel="stylesheet" href="./scss/todo.scss" />
     <title>ToDo</title>
   </head>
   <body>
     <header class="header">
-        <div class="header__wrapper">
-            <div class="header__container container">
-                <nav class="header__nav nav">
-                    <div class="nav__logo">
-                        <a href="#" class="logo__link">TodoList</a>
-                    </div>
-                    <ul class="nav__menu menu">
-                        <li class="menu__link"><a href=""><i class="fab fa-linkedin-in"></i></a></li>
-                        <li class="menu__link"><a href="https://t.me/OlegZaicev"><i class="fab fa-telegram-plane"></i></a></li>
-                        <li class="menu__link"><a href="mailto:30oleg.zv94@gmail.com"><i class="fab fa-google-plus-g"></i></a></li>
-                    </ul>
-                </nav>
-                <div class="header__content header-content">
-                    <h2 class="header-content__title">
-                        Hi there!
-                    </h2>
-                    <div class="header-content__subtitle">People are very busy and stressful today. They need to keep many things in their mind. How about make your life a bit easier ? You can. Just click the link below.</div>
-                    <button class="header-content__button">Push me</button>
-                </div>
-                <div class="header__aside header-aside">
-                    <div class="header-aside__link">
-                        <a href="https://github.com/oldremain"><i class="fab fa-github"></i></a>
-                    </div>
-                </div>
+      <div class="header__wrapper">
+        <div class="header__container container">
+          <nav class="header__nav nav">
+            <div class="nav__logo">
+              <a href="#" class="logo__link">TodoList</a>
             </div>
+            <ul class="nav__menu menu">
+              <li class="menu__link">
+                <a href=""><i class="fab fa-linkedin-in"></i></a>
+              </li>
+              <li class="menu__link">
+                <a href="https://t.me/OlegZaicev"
+                  ><i class="fab fa-telegram-plane"></i
+                ></a>
+              </li>
+              <li class="menu__link">
+                <a href="mailto:30oleg.zv94@gmail.com"
+                  ><i class="fab fa-google-plus-g"></i
+                ></a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header__content header-content">
+            <h2 class="header-content__title">Hi there!</h2>
+            <div class="header-content__subtitle">
+              People are very busy and stressful today. They need to keep many
+              things in their mind. How about make your life a bit easier ? You
+              can. Just click the link below.
+            </div>
+            <button class="header-content__button">Push me</button>
+          </div>
+          <div class="header__aside header-aside">
+            <div class="header-aside__link">
+              <a href="https://github.com/oldremain"
+                ><i class="fab fa-github"></i
+              ></a>
+            </div>
+          </div>
         </div>
+      </div>
     </header>
 
     <section class="todo">
-        <div class="todo__wrapper">
-            <div class="todo__container container">
-                <div class="todo__tabs tabs ">
-                    <div class="tabs__item">List</div>
-                    <div class="tabs__item">Add</div>
-                    <div class="tabs__item tabs__item_fav">My favorites</div>
-                </div>
-
-                <form action="#" class="todo__form form">
-                    <h2 class="form__title">New note</h2>
-                    <div class="form__element">
-                        <label for="title" class="label-title">Title</label>
-                        <input type="text" id="title" placeholder="Create a title">
-                    </div>
-                    <div class="form__element">
-                        <label for="text" class="label-textarea">Text</label>
-                        <textarea name="#" id="text" cols="30" rows="10" placeholder="Type text"></textarea>
-                    </div>
-                    <div class="form__element">
-                        <label for="options" class="label-select">Choose type of post</label>
-                        <select name="#" id="options">
-                                <option value="note" selected>Note</option>
-                                <option value="news">News</option>
-                        </select>
-                    </div>
-                    <button class="form__button" type="submit">Create</button>
-                </form>
+      <div class="todo__wrapper">
+        <div class="todo__container container">
+          <div class="todo__tabs tabs-mediumscreen">
+            <div class="tabs__item">List</div>
+            <div class="tabs__item">Add</div>
+            <div class="tabs__item tabs__item_fav">My favorites</div>
+          </div>
+          <div class="todo__tabs tabs-smallscreen">
+            <div class="tabs__item"><i class="fas fa-list-ol"></i></div>
+            <div class="tabs__item"><i class="fas fa-plus-circle"></i></div>
+            <div class="tabs__item tabs__item_fav">
+              <i class="fas fa-heart"></i>
             </div>
+          </div>
+
+          <div class="todo__notes">
+            <div class="note">
+              <div class="note__date">24.01.2022</div>
+              <div class="note__text">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                Doloribus numquam, sunt voluptates aperiam corrupti cum dolorem
+                explicabo quia amet aliquid quisquam accusantium? Ullam
+                consequatur similique ratione sunt at voluptatem autem.
+              </div>
+              <div class="buttons-row">
+                <button type="button" class="note__button note__button_edit">
+                  Edit
+                </button>
+                <button type="button" class="note__button">Delete</button>
+              </div>
+            </div>
+          </div>
+
+          <form action="#" class="todo__form form">
+            <h2 class="form__title">New note</h2>
+            <div class="form__element">
+              <label for="title" class="label-title">Title</label>
+              <input type="text" id="title" placeholder="Create a title" />
+            </div>
+            <div class="form__element">
+              <label for="text" class="label-textarea">Text</label>
+              <textarea
+                name="#"
+                id="text"
+                cols="30"
+                rows="10"
+                placeholder="Type text"
+              ></textarea>
+            </div>
+            <div class="form__element">
+              <label for="options" class="label-select"
+                >Choose type of post</label
+              >
+              <select name="#" id="options">
+                <option value="note" selected>Note</option>
+                <option value="news">News</option>
+              </select>
+            </div>
+            <button class="form__button" type="submit">Create</button>
+          </form>
         </div>
+      </div>
     </section>
     <script type="module" src="./js/script.js"></script>
   </body>
