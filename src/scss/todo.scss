@@ -49,85 +49,103 @@
   display: none;
 }
 @media (max-width: 768px) {
-    .tabs-mediumscreen {
-      display: none;
-    }
-    .tabs-smallscreen {
+  .tabs-mediumscreen {
+    display: none;
+  }
+  .tabs-smallscreen {
+    display: flex;
+    justify-content: center;
+    .tabs__item {
+      width: 70px;
+      height: 70px;
+      border-radius: 50%;
       display: flex;
       justify-content: center;
-      .tabs__item {
-        width: 70px;
-        height: 70px;
-        border-radius: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-      }
-    }
-    .tabs-smallscreen .tabs__item_fav::after {
-      display: none;
-    }
-    .todo__form {
-      padding: 36px 30px;
+      align-items: center;
     }
   }
+  .tabs-smallscreen .tabs__item_fav::after {
+    display: none;
+  }
+  .todo__form {
+    padding: 36px 30px;
+  }
+}
 //------------------------Notes------------------//
 
 .todo__notes {
-    display: flex;
-    justify-content: space-around;   
-    flex-wrap: wrap;
-    margin-bottom: 30px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
 }
 .todo__notes > * {
-    margin: 0 0 40px 0;
+  margin: 0 0 40px 0;
 }
 .note {
-    flex: 0 1 45%;
-    background: linear-gradient(to bottom, #ECE9E6, #FFFFFF);
-    border-radius: 20px;
+  flex: 0 1 45%;
+  background: linear-gradient(to bottom, #ece9e6, #ffffff);
+  border-radius: 20px;
+  position: relative;
 }
 .note__date {
-    padding: 20px 30px;
-    border-radius: 20px 20px 0 0;
-    background: linear-gradient(to bottom, #232526, #414345);
-    color: #eee6e6;
-    font-weight: 500;
+  padding: 20px 30px;
+  border-radius: 20px 20px 0 0;
+  background: linear-gradient(to bottom, #232526, #414345);
+  color: #eee6e6;
+  font-weight: 500;
+}
+.note__button_favorite {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+  font-size: 18px;
+  background: #eee6e6;
+  background-clip: text;
+  transition: 0.3s;
+  .fas {
+    color: transparent;
+  }
+  :hover {
+    background: linear-gradient(to right, #ff512f, #dd2476);
+    background-clip: text;
+    /*!!!!!!!!!! По нажатия кнопка должна окрашиваться в такой цвет */
+  }
 }
 .note__text {
-    padding: 30px;
-    font-style: italic;
+  padding: 30px;
+  font-style: italic;
 }
 .buttons-row {
-    display: flex;
-    padding: 20px 30px;
-    justify-content: flex-end;
-    border-top: 1px solid rgb(216, 211, 211);
+  display: flex;
+  padding: 20px 30px;
+  justify-content: flex-end;
+  border-top: 1px solid rgb(216, 211, 211);
 }
 .note__button {
-    padding: 10px 15px;
-    border-radius: 10px;
-    background: linear-gradient(to right, #FF512F, #DD2476);
-    color: transparent;
-    background-clip: text;
-    font-size: 18px;
-    font-weight: 700;
+  padding: 10px 15px;
+  border-radius: 10px;
+  background: linear-gradient(to right, #ff512f, #dd2476);
+  color: transparent;
+  background-clip: text;
+  font-size: 18px;
+  font-weight: 700;
 }
 .note__button_edit {
-    margin-right: 15px;
+  margin-right: 15px;
 }
-@media (max-width:768px) {
-    .todo__notes {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-    .note {
-        max-width: 300px;
-    }
-    .todo__notes > * {
-        margin: 0 0 30px 0;
-    }
+@media (max-width: 768px) {
+  .todo__notes {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .note {
+    max-width: 300px;
+  }
+  .todo__notes > * {
+    margin: 0 0 30px 0;
+  }
 }
 //----------------------form--------------------//
 
@@ -196,5 +214,3 @@ label {
     border-top: 20px;
   }
 }
-
-
