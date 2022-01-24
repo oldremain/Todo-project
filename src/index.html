@@ -16,7 +16,9 @@
     <title>ToDo</title>
   </head>
   <body>
-    <header class="header">
+
+      <!-- Header -->
+    <header class="header" id="header">
       <div class="header__wrapper">
         <div class="header__container container">
           <nav class="header__nav nav">
@@ -46,7 +48,9 @@
               things in their mind. How about make your life a bit easier ? You
               can. Just click the link below.
             </div>
-            <button class="header-content__button">Push me</button>
+            <button class="header-content__button js-header-start">
+              Push me
+            </button>
           </div>
           <div class="header__aside header-aside">
             <div class="header-aside__link">
@@ -58,11 +62,14 @@
         </div>
       </div>
     </header>
+    <!-- Header -->
 
     <section class="todo">
       <div class="todo__wrapper">
         <div class="todo__container container">
-          <div class="todo__tabs tabs-mediumscreen">
+
+            <!-- Табы -->
+          <div class="todo__tabs tabs-mediumscreen" id="tabs">
             <div class="tabs__item">List</div>
             <div class="tabs__item">Add</div>
             <div class="tabs__item tabs__item_fav">My favorites</div>
@@ -74,11 +81,15 @@
               <i class="fas fa-heart"></i>
             </div>
           </div>
+          <!-- Табы -->
 
-          <div class="todo__notes">
+          <!-- Заметка -->
+          <div class="todo__notes" id="notes">
             <div class="note">
               <div class="note__date">24.01.2022</div>
-              <button class="note__button_favorite"><i class="fas fa-heart"></i></button>
+              <button class="note__button_favorite">
+                <i class="fas fa-heart"></i>
+              </button>
               <div class="note__text">
                 Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                 Doloribus numquam, sunt voluptates aperiam corrupti cum dolorem
@@ -93,8 +104,10 @@
               </div>
             </div>
           </div>
+           <!-- Заметка -->
 
-          <form action="#" class="todo__form form">
+            <!-- Форма -->
+          <form action="#" class="todo__form form" id="form">
             <h2 class="form__title">New note</h2>
             <div class="form__element">
               <label for="title" class="label-title">Title</label>
@@ -121,9 +134,12 @@
             </div>
             <button class="form__button" type="submit">Create</button>
           </form>
+           <!-- Форма -->
         </div>
       </div>
     </section>
     <script type="module" src="./js/script.js"></script>
+    <script type="module" src="./core/component.js"></script>
+    <script type="module" src="./components/header.components.js"></script>
   </body>
 </html>

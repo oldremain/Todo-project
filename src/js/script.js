@@ -1,4 +1,10 @@
-import "../scss/style.scss";
+import { HeaderComponents} from '../components/header.components';
 
-console.log('hello');
+// const header = new HeaderComponents('header');
+
+new HeaderComponents('header');
+
+// console.log(header);
+// console.log($btn);
+
 
