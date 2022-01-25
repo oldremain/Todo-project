@@ -15,5 +15,3 @@ export function buttonHandler() {
     this.hide();
 }
 
-
-// console.log(header);
