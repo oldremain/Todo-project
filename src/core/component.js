@@ -10,7 +10,6 @@ export class Component {
     }
     hide() {
         this.$el.classList.add('hide');
-        // console.log('i am hide');
     }
     show() {
         this.$el.classList.remove('hide');

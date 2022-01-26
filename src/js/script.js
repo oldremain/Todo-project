@@ -1,12 +1,20 @@
-import { HeaderComponents, buttonHandler} from '../components/header.components';
-
-// const header = new HeaderComponents('header');
-// const btn = header.init();
+import { HeaderComponents } from '../components/header.components';
+import { NavigationComponents } from '../components/navigation.components.js';
+import { PostsComponents } from '../components/posts.components.js';
+import { CreateComponents} from '../components/create.components.js';
+import { FavoriteComponents } from '../components/favorite.components';
 
 new HeaderComponents('header');
-// btn.addEventListener('click', buttonHandler.bind(header));
 
-// console.log(header);
-// console.log(btn);
+const TABS = new NavigationComponents('tabs');
+const NOTES = new PostsComponents('notes');
+const CREATE = new CreateComponents('form');
+const FAVORITE = new FavoriteComponents();
+
+
+console.log(TABS);
+console.log(NOTES);
+console.log(CREATE);
+
 
 
