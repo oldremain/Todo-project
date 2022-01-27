@@ -1,7 +1,7 @@
 import { HeaderComponents } from '../components/header.components';
 import { NavigationComponents } from '../components/navigation.components.js';
 import { PostsComponents } from '../components/posts.components.js';
-import { CreateComponents} from '../components/create.components.js';
+import { CreateComponents } from '../components/create.components.js';
 import { FavoriteComponents } from '../components/favorite.components';
 
 new HeaderComponents('header');
@@ -11,10 +11,9 @@ const NOTES = new PostsComponents('notes');
 const CREATE = new CreateComponents('form');
 const FAVORITE = new FavoriteComponents();
 
+//Табы для маленького экрана
+const TABS_SMALLSCREEN = new NavigationComponents('tabs-sm');
 
 console.log(TABS);
 console.log(NOTES);
 console.log(CREATE);
-
-
-

@@ -21,10 +21,5 @@ function tabClickHandler(e) {
   if (e.target.classList.contains('tabs__item')) {
     tabsArray.forEach((tab) => tab.classList.remove('active'));
     e.target.classList.add('active');
-  } else {
-    tabsArray.forEach((tab) => tab.classList.remove('active'));
-    e.target.parentElement.classList.add('active');
   }
-
-  console.log(e.target.parentElement);
 }

@@ -16,9 +16,10 @@ export class HeaderComponents extends Component {
   }
 }
 
-export function buttonHandler() {
+function buttonHandler() {
   this.hide();
 
   // Заносим в LocalStorage, что мы посетили страницу
   localStorage.setItem('visited', 'header page is visited'); 
 }
+

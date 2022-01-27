@@ -13,12 +13,11 @@
     <link rel="stylesheet" href="./scss/style.scss" />
     <link rel="stylesheet" href="./scss/header.scss" />
     <link rel="stylesheet" href="./scss/todo.scss" />
-    <link rel="icon" type="image/png" href="./img/todo.png">
+    <link rel="icon" type="image/png" href="./img/todo.png" />
     <title>ToDo</title>
   </head>
   <body>
-
-      <!-- Header -->
+    <!-- Header -->
     <header class="header" id="header">
       <div class="header__wrapper">
         <div class="header__container container">
@@ -68,20 +67,29 @@
     <section class="todo">
       <div class="todo__wrapper">
         <div class="todo__container container">
+          <!-- Табы-fullscreen-->
+          <ul class="todo__tabs tabs-mediumscreen" id="tabs">
+            <li><a href="#" class="tabs__item">List</a></li>
+            <li><a href="#" class="tabs__item">Add</a></li>
+            <li>
+              <a href="#" class="tabs__item tabs__item_fav">My favorites</a>
+            </li>
+          </ul>
 
-            <!-- Табы -->
-          <div class="todo__tabs tabs-mediumscreen" id="tabs">
-            <div class="tabs__item" ><a href="#">List</a></div>
-            <div class="tabs__item"><a href="#">Add</a></div>
-            <div class="tabs__item tabs__item_fav"><a href="#">My favorites</a></div>
-          </div>
-          <div class="todo__tabs tabs-smallscreen">
-            <div class="tabs__item"><i class="fas fa-list-ol"></i></div>
-            <div class="tabs__item"><i class="fas fa-plus-circle"></i></div>
-            <div class="tabs__item tabs__item_fav">
-              <i class="fas fa-heart"></i>
-            </div>
-          </div>
+          <!-- Табы-smallscreen-->
+          <!-- <ul class="todo__tabs tabs-smallscreen" id="tabs-sm">
+            <li>
+              <a href="#" class="tabs__item tabs__item-list"></a>
+            </li>
+            <li>
+              <a href="#" class="tabs__item tabs__item-plus"
+                ></a>
+            </li>
+            <li>
+              <a href="#" class="tabs__item tabs__item-heart"
+                ></a>
+            </li>
+          </ul> -->
           <!-- Табы -->
 
           <!-- Заметка -->
@@ -105,9 +113,9 @@
               </div>
             </div>
           </div>
-           <!-- Заметка -->
+          <!-- Заметка -->
 
-            <!-- Форма -->
+          <!-- Форма -->
           <form action="#" class="todo__form form" id="form">
             <h2 class="form__title">New note</h2>
             <div class="form__element">
@@ -135,7 +143,7 @@
             </div>
             <button class="form__button" type="submit">Create</button>
           </form>
-           <!-- Форма -->
+          <!-- Форма -->
         </div>
       </div>
     </section>
