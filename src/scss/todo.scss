@@ -122,11 +122,15 @@
   flex: 0 1 45%;
   background: linear-gradient(to bottom, #ece9e6, #ffffff);
   border-radius: 20px;
+  overflow: hidden;
   position: relative;
+  transition: 0.4s ease;
+  &:hover {
+    box-shadow: 0 0 5px rgb(172, 170, 170);
+  }
 }
 .note__date {
   padding: 20px 30px;
-  border-radius: 20px 20px 0 0;
   background: linear-gradient(to bottom, #232526, #414345);
   color: #eee6e6;
   font-weight: 500;
@@ -250,7 +254,75 @@ label {
     border-top: 20px;
   }
 }
+@media (max-width: 576px) {
+    .todo__form {
+        padding: 36px 30px;
+    }
+}
+@media (max-width: 320px) {
+    .todo__form {
+        padding: 26px 20px;
+    }
+}
+//---------------------------Favorite----------------------------------------//
 
+.favorite {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.favorite > *:not(:last-child) {
+  margin-bottom: 50px;
+}
+.favorite-note {
+  width: 70%;
+  position: relative;
+  transition: 0.4s ease;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 0 5px rgb(172, 170, 170);
+}
+.favorite-note__content {
+  padding-bottom: 20px;
+}
+.favorite-note__title {
+  padding: 20px 30px;
+  background: linear-gradient(to bottom, #232526, #414345);
+  color: #eee6e6;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+.favorite-note__description {
+  background: linear-gradient(to bottom, #ece9e6, #ffffff);
+  padding: 15px;
+}
+.favorite-note__btn {
+  padding: 10px 15px;
+  border-radius: 10px;
+  background: linear-gradient(to right, #ff512f, #dd2476);
+  color: transparent;
+  background-clip: text;
+  font-size: 18px;
+  font-weight: 700;
+  position: absolute;
+  top: 8px;
+  right: 20px;
+}
+
+@media (max-width: 576px) {
+  .favorite-note__content {
+    display: flex;
+    flex-direction: column;
+  }
+  .favorite-note {
+    width: 80%;
+  }
+  .favorite-note__btn {
+    position: relative;
+    align-self: flex-end;
+  }
+}
 .hide {
-    display: none;
+  display: none;
 }

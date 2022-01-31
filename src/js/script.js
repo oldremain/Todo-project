@@ -28,8 +28,22 @@ TABS.registerTabs([
 ]);
 
 
-//Табы для маленького экрана
+// Табы для маленького экрана
 // const TABS_SMALLSCREEN = new NavigationComponents('tabs-sm');
+// TABS_SMALLSCREEN.registerTabs([
+//     {
+//         name: 'posts',
+//         component: POSTS
+//     },
+//     {
+//         name: 'create',
+//         component: CREATE
+//     },
+//     {
+//         name: 'favorite',
+//         component: FAVORITE
+//     }
+// ]);
 
 console.log(TABS);
 console.log(POSTS);

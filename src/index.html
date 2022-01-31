@@ -72,21 +72,23 @@
             <li><a href="#" class="tabs__item" data-name="posts">List</a></li>
             <li><a href="#" class="tabs__item" data-name="create">Add</a></li>
             <li>
-              <a href="#" class="tabs__item tabs__item_fav" data-name="favorite">My favorites</a>
+              <a href="#" class="tabs__item tabs__item_fav" data-name="favorite"
+                >My favorites</a
+              >
             </li>
           </ul>
 
           <!-- Табы-smallscreen-->
           <!-- <ul class="todo__tabs tabs-smallscreen" id="tabs-sm">
             <li>
-              <a href="#" class="tabs__item tabs__item-list"></a>
+              <a href="#" class="tabs__item tabs__item-list" data-name="posts"></a>
             </li>
             <li>
-              <a href="#" class="tabs__item tabs__item-plus"
+              <a href="#" class="tabs__item tabs__item-plus" data-name="create"
                 ></a>
             </li>
             <li>
-              <a href="#" class="tabs__item tabs__item-heart"
+              <a href="#" class="tabs__item tabs__item-heart" data-name="favorite"
                 ></a>
             </li>
           </ul> -->
@@ -94,7 +96,7 @@
 
           <!-- Заметка -->
           <div class="todo__notes hide" id="posts">
-            <div class="note">
+            <div class="todo__note note">
               <div class="note__date">24.01.2022</div>
               <button class="note__button_favorite">
                 <i class="fas fa-heart"></i>
@@ -145,7 +147,42 @@
           </form>
           <!-- Форма -->
 
-          <div class="favorite hide" id="favorite"></div>
+          <div class="favorite" id="favorite">
+            <div class="favorite__note favorite-note">
+              <div class="favorite-note__content">
+                <h3 class="favorite-note__title">Title</h3>
+                <div class="favorite-note__description">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Animi fuga quis, quam voluptates, enim dolores eos voluptatem
+                </div>
+                <button class="favorite-note__btn">Delete</button>
+              </div>
+            </div>
+
+            <div class="favorite__note favorite-note">
+              <div class="favorite-note__content">
+                <h3 class="favorite-note__title">Title</h3>
+                <div class="favorite-note__description">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Animi fuga quis, quam voluptates, enim dolores eos voluptatem
+                  magni tenetur molestias aliquid quibusdam
+                </div>
+                <button class="favorite-note__btn">Delete</button>
+              </div>
+            </div>
+
+            <div class="favorite__note favorite-note">
+              <div class="favorite-note__content">
+                <h3 class="favorite-note__title">Title</h3>
+                <div class="favorite-note__description">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Animi fuga quis, quam voluptates, enim dolores eos voluptatem
+                  magni tenetur molestias aliquid quibusdam
+                </div>
+                <button class="favorite-note__btn">Delete</button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>

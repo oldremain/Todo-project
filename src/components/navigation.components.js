@@ -5,19 +5,19 @@ export class NavigationComponents extends Component {
     super(id);
     this.tabs = [];
   }
-  // Создаём метод для сбора всех табов в массив объектов
+  // Создаём метод для сбора всех компонентов навигации вместе
   registerTabs(tabs) {
     this.tabs = tabs;
   }
 
-  // Сопоставляем нажатый нами таб с табами из массива и навешиваем класс 'hide' контенту
+  // Получаем элемент навигации из массива this.tabs 
   find(dataName) {
     const activeTab = this.tabs.find(({ name }) => {
       return name === dataName;
     });
 
     // console.log(activeTab);
-    
+
     this.tabs.forEach((tab) => {
       // tab.component.$el.classList.add('hide');
 
@@ -26,12 +26,12 @@ export class NavigationComponents extends Component {
       // }
 
       tab.component.hide();
+
       if (tab.name === activeTab.name) {
         activeTab.component.show();
       }
 
-      //  console.log(this.tabs[0].component);
-    //   console.log(tab.component);
+      //   console.log(tab.component);
     });
   }
 
@@ -53,5 +53,8 @@ function tabClickHandler(e) {
   e.target.classList.add('active');
 
   // С помощью данного метода получаем необходимый элемент из массива this.tabs, содержащий соответствующий табу компонент
+  
   this.find(e.target.dataset.name);
+
+//   console.log(this);
 }
