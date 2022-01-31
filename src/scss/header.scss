@@ -1,6 +1,3 @@
-.hide {
-    display: none;
-}
 .header {
   height: 100vh;
   padding: 40px 0;
@@ -183,4 +180,8 @@
   .header__aside {
     top: 45%;
   }
+}
+
+.hide {
+    display: none;
 }

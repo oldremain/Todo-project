@@ -20,6 +20,6 @@ function buttonHandler() {
   this.hide();
 
   // Заносим в LocalStorage, что мы посетили страницу
-  localStorage.setItem('visited', 'header page is visited'); 
+  localStorage.setItem('visited', JSON.stringify('header page is visited')); 
 }
 

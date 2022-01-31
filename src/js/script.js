@@ -7,13 +7,30 @@ import { FavoriteComponents } from '../components/favorite.components';
 new HeaderComponents('header');
 
 const TABS = new NavigationComponents('tabs');
-const NOTES = new PostsComponents('notes');
-const CREATE = new CreateComponents('form');
-const FAVORITE = new FavoriteComponents();
+const POSTS = new PostsComponents('posts');
+const CREATE = new CreateComponents('create');
+const FAVORITE = new FavoriteComponents('favorite');
+
+//Собираем все компоненты страницы вместе
+TABS.registerTabs([
+    {
+        name: 'posts',
+        component: POSTS
+    },
+    {
+        name: 'create',
+        component: CREATE
+    },
+    {
+        name: 'favorite',
+        component: FAVORITE
+    }
+]);
+
 
 //Табы для маленького экрана
-const TABS_SMALLSCREEN = new NavigationComponents('tabs-sm');
+// const TABS_SMALLSCREEN = new NavigationComponents('tabs-sm');
 
 console.log(TABS);
-console.log(NOTES);
+console.log(POSTS);
 console.log(CREATE);
