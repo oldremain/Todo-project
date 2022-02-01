@@ -10,19 +10,21 @@ export class NavigationComponents extends Component {
     this.tabs = tabs;
   }
 
-  // Получаем элемент навигации из массива this.tabs 
+  // Получаем элемент навигации из массива this.tabs
   find(dataName) {
     const activeTab = this.tabs.find(({ name }) => {
       return name === dataName;
     });
     // console.log(activeTab);
-    
+
     this.tabs.forEach((tab) => {
-      tab.component.hide();
-      if (tab.name === activeTab.name) {
+      if (tab === activeTab) {
         activeTab.component.show();
+      } else {
+        tab.component.hide();
       }
-      //   console.log(tab.component);
+      // console.log(tab);
+      // console.log(activeTab)
     });
   }
 
@@ -44,8 +46,8 @@ function tabClickHandler(e) {
   e.target.classList.add('active');
 
   // С помощью данного метода получаем необходимый элемент из массива this.tabs, содержащий соответствующий табу компонент
-  
+
   this.find(e.target.dataset.name);
 
-//   console.log(this);
+  //   console.log(this);
 }
