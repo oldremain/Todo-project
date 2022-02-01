@@ -15,22 +15,13 @@ export class NavigationComponents extends Component {
     const activeTab = this.tabs.find(({ name }) => {
       return name === dataName;
     });
-
     // console.log(activeTab);
-
+    
     this.tabs.forEach((tab) => {
-      // tab.component.$el.classList.add('hide');
-
-      // if (tab.name === activeTab.name) {
-      //     activeTab.component.$el.classList.remove('hide');
-      // }
-
       tab.component.hide();
-
       if (tab.name === activeTab.name) {
         activeTab.component.show();
       }
-
       //   console.log(tab.component);
     });
   }
