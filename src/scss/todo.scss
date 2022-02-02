@@ -31,7 +31,7 @@
   text-align: center;
   transition: 0.3s ease;
 }
-.tabs__item:hover {
+.tabs__item.active {
   background: #424242;
   color: #eceaea;
   transform: translateY(6px);
@@ -125,9 +125,7 @@
   overflow: hidden;
   position: relative;
   transition: 0.4s ease;
-  &:hover {
-    box-shadow: 0 0 5px rgb(172, 170, 170);
-  }
+  box-shadow: 0 0 5px rgb(172, 170, 170);
 }
 .note__date {
   padding: 20px 30px;
@@ -255,14 +253,14 @@ label {
   }
 }
 @media (max-width: 576px) {
-    .todo__form {
-        padding: 36px 30px;
-    }
+  .todo__form {
+    padding: 36px 30px;
+  }
 }
 @media (max-width: 320px) {
-    .todo__form {
-        padding: 26px 20px;
-    }
+  .todo__form {
+    padding: 26px 20px;
+  }
 }
 //---------------------------Favorite----------------------------------------//
 
