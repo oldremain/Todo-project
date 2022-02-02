@@ -1,8 +1,12 @@
 import { HeaderComponents } from '../components/header.components';
-import { NavigationComponents } from '../components/navigation.components.js';
-import { PostsComponents } from '../components/posts.components.js';
-import { CreateComponents } from '../components/create.components.js';
+import { NavigationComponents } from '../components/navigation.components';
+import { PostsComponents } from '../components/posts.components';
+import { CreateComponents } from '../components/create.components';
 import { FavoriteComponents } from '../components/favorite.components';
+
+//HomeButton
+// import { HomeButton } from '../components/homebutton.component';
+// let header = new HeaderComponents('header');
 
 new HeaderComponents('header');
 
@@ -44,7 +48,9 @@ TABS.registerTabs([
 //         component: FAVORITE
 //     }
 // ]);
+// const HOME = new HomeButton('home-btn', header);
 
 console.log(TABS);
 console.log(POSTS);
 console.log(CREATE);
+// console.log(HOME);

@@ -2,6 +2,8 @@
 
 .todo {
   padding: 60px 0;
+  position: relative;
+  height: 100%;
 }
 .todo__wrapper {
 }
@@ -321,6 +323,23 @@ label {
     align-self: flex-end;
   }
 }
+
+//------------------------------Home-button-------------------------//
+.home-btn {
+  &::after {
+    content: '\f015';
+    font-family: 'Font Awesome 5 Free';
+    font-size: 25px;
+    font-weight: 900;
+    color: #424242;
+    display: inline-block;
+    opacity: 0.9;
+    position: absolute;
+    bottom: 4%;
+    right: 2%;
+  }
+}
+
 .hide {
   display: none;
 }
