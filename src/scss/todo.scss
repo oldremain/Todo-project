@@ -333,13 +333,16 @@ label {
     font-weight: 900;
     color: #424242;
     display: inline-block;
-    opacity: 0.9;
+    opacity: 0.8;
     position: absolute;
     bottom: 4%;
     right: 2%;
+    transition: all 0.3s ease;
   }
 }
-
+.home-btn:hover::after {
+    opacity: 0.9;
+}
 .hide {
   display: none;
 }

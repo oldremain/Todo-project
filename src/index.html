@@ -122,12 +122,12 @@
             <h2 class="form__title">New note</h2>
             <div class="form__element">
               <label for="title" class="label-title">Title</label>
-              <input type="text" id="title" placeholder="Create a title" />
+              <input type="text" id="title" placeholder="Create a title" name="title" />
             </div>
             <div class="form__element">
               <label for="text" class="label-textarea">Text</label>
               <textarea
-                name="#"
+                name="fulltext"
                 id="text"
                 cols="30"
                 rows="10"
@@ -138,7 +138,7 @@
               <label for="options" class="label-select"
                 >Choose type of post</label
               >
-              <select name="#" id="options">
+              <select name="type" id="options">
                 <option value="note" selected>Note</option>
                 <option value="news">News</option>
               </select>

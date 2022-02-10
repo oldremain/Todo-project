@@ -17,20 +17,19 @@ const FAVORITE = new FavoriteComponents('favorite');
 
 //Собираем все компоненты страницы вместе
 TABS.registerTabs([
-    {
-        name: 'posts',
-        component: POSTS
-    },
-    {
-        name: 'create',
-        component: CREATE
-    },
-    {
-        name: 'favorite',
-        component: FAVORITE
-    }
+  {
+    name: 'posts',
+    component: POSTS,
+  },
+  {
+    name: 'create',
+    component: CREATE,
+  },
+  {
+    name: 'favorite',
+    component: FAVORITE,
+  },
 ]);
-
 
 // Табы для маленького экрана
 // const TABS_SMALLSCREEN = new NavigationComponents('tabs-sm');
