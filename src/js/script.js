@@ -4,6 +4,10 @@ import { PostsComponents } from '../components/posts.components';
 import { CreateComponents } from '../components/create.components';
 import { FavoriteComponents } from '../components/favorite.components';
 
+import { apiService } from '../services/app.service';
+
+
+
 //HomeButton
 // import { HomeButton } from '../components/homebutton.component';
 // let header = new HeaderComponents('header');
@@ -52,4 +56,6 @@ TABS.registerTabs([
 console.log(TABS);
 console.log(POSTS);
 console.log(CREATE);
+
 // console.log(HOME);
+console.log(apiService);

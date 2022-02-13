@@ -221,7 +221,9 @@ textarea {
   margin-bottom: 15px;
   padding: 10px;
 }
-
+.invalid {
+  border: 1px solid red;
+}
 textarea {
   resize: none;
 }
@@ -253,6 +255,9 @@ label {
   &:hover {
     border-top: 20px;
   }
+}
+.validation-error {
+  color: red;
 }
 @media (max-width: 576px) {
   .todo__form {
@@ -341,7 +346,7 @@ label {
   }
 }
 .home-btn:hover::after {
-    opacity: 0.9;
+  opacity: 0.9;
 }
 .hide {
   display: none;

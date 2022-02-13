@@ -1,12 +1,14 @@
 import { Component } from '../core/component.js';
 import { Form } from '../core/form.js';
 import { Validators } from '../core/validators.js';
+import { apiService } from '../services/app.service';
 
 export class CreateComponents extends Component {
   constructor(id) {
     super(id);
   }
   init() {
+      // Получаем ссылку на объект формы в 'this.form' и ссылку на объект содержащий название наших 'input' в 'this.controls'
     this.form = new Form(this.$el, {
       title: [Validators.required],
       fulltext: [Validators.required, Validators.minLength(8)],
@@ -19,16 +21,16 @@ export class CreateComponents extends Component {
 async function submitHandler(e) {
   e.preventDefault();
 
-  if (true) {
+  if (this.form.isValid()) {
     const formData = {
       type: this.$el.type.value,
       date: new Date().toLocaleDateString(),
       ...this.form.value(),
     };
+
+    await apiService.createPost(formData);
+    this.form.clear();
+    alert('This post is created');
     console.log(formData);
   }
-
-//   await apiService.createPost(formData);
-//   this.form.clear();
-//   alert('This post is created');
 }
