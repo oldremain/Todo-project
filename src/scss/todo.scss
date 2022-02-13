@@ -1,7 +1,7 @@
 //-------------------tabs------------------------//
 
 .todo {
-  padding: 60px 0;
+  padding: 20px 0 60px;
   position: relative;
   height: 100%;
 }
@@ -197,7 +197,7 @@
   max-width: 560px;
   border-radius: 10px;
   margin: 0 auto;
-  padding: 66px 60px;
+  padding: 46px 60px;
   background: linear-gradient(135deg, #ee9ae5, #5961f9);
   box-shadow: 1px 1px 4px rgb(41, 40, 40);
 }
@@ -210,6 +210,8 @@
 }
 .form__element {
   width: 100%;
+  position: relative;
+  padding-bottom: 20px;
 }
 
 select,
@@ -222,7 +224,7 @@ textarea {
   padding: 10px;
 }
 .invalid {
-  border: 1px solid red;
+  outline: 1px solid red;
 }
 textarea {
   resize: none;
@@ -257,6 +259,10 @@ label {
   }
 }
 .validation-error {
+  font-size: 13px;
+  position: absolute;
+  bottom: 15px;
+  left: 0;
   color: red;
 }
 @media (max-width: 576px) {

@@ -47,7 +47,8 @@ export class Form {
 
 function setError($control) {
   clearError($control);
-  const error = `<p class="validation-error">Fill in all the inputs field</p>`;
+  const error = ($control.name === 'fulltext') ? `<p class="validation-error">Please, fill in this field. The length must be at least 8 characters</p>` : `<p class="validation-error">Please, fill in this field</p>`; // Выводим ошибку в зависимости от поля
+
   $control.classList.add('invalid');
   $control.insertAdjacentHTML('afterend', error);
 }
