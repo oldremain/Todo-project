@@ -96,24 +96,31 @@
 
           <!-- Заметка -->
           <div class="todo__notes hide" id="posts">
-            <div class="todo__note note">
-              <div class="note__date">24.01.2022</div>
-              <button class="note__button_favorite">
-                <i class="fas fa-heart"></i>
-              </button>
-              <div class="note__text">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Doloribus numquam, sunt voluptates aperiam corrupti cum dolorem
-                explicabo quia amet aliquid quisquam accusantium? Ullam
-                consequatur similique ratione sunt at voluptatem autem.
+            <!-- <div class="todo__note note">
+              <div class="note__head">
+                  <div class="note__date">24.01.2022</div>
+                  <div class="note__icon">
+                    <i class="fas fa-heart"></i>
+                  </div>
               </div>
+             <div class="note__body">
+                  <div class="note__title">dfgdsfg</div>
+                  <div class="note__text">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Doloribus numquam, sunt voluptates aperiam corrupti cum dolorem
+                    explicabo quia amet aliquid quisquam accusantium? Ullam
+                    consequatur similique ratione sunt at voluptatem autem.
+                  </div>
+             </div>
               <div class="buttons-row">
                 <button type="button" class="note__button note__button_edit">
                   Edit
                 </button>
-                <button type="button" class="note__button">Delete</button>
+                <button class="note__button_favorite" data-id="" data-title="">
+                  Delete
+                </button>
               </div>
-            </div>
+            </div> -->
           </div>
           <!-- Заметка -->
 
@@ -122,7 +129,12 @@
             <h2 class="form__title">New note</h2>
             <div class="form__element">
               <label for="title" class="label-title">Title</label>
-              <input type="text" id="title" placeholder="Create a title" name="title" />
+              <input
+                type="text"
+                id="title"
+                placeholder="Create a title"
+                name="title"
+              />
             </div>
             <div class="form__element">
               <label for="text" class="label-textarea">Text</label>
@@ -154,30 +166,6 @@
                 <div class="favorite-note__description">
                   Lorem ipsum dolor sit, amet consectetur adipisicing elit.
                   Animi fuga quis, quam voluptates, enim dolores eos voluptatem
-                </div>
-                <button class="favorite-note__btn">Delete</button>
-              </div>
-            </div>
-
-            <div class="favorite__note favorite-note">
-              <div class="favorite-note__content">
-                <h3 class="favorite-note__title">Title</h3>
-                <div class="favorite-note__description">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Animi fuga quis, quam voluptates, enim dolores eos voluptatem
-                  magni tenetur molestias aliquid quibusdam
-                </div>
-                <button class="favorite-note__btn">Delete</button>
-              </div>
-            </div>
-
-            <div class="favorite__note favorite-note">
-              <div class="favorite-note__content">
-                <h3 class="favorite-note__title">Title</h3>
-                <div class="favorite-note__description">
-                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                  Animi fuga quis, quam voluptates, enim dolores eos voluptatem
-                  magni tenetur molestias aliquid quibusdam
                 </div>
                 <button class="favorite-note__btn">Delete</button>
               </div>

@@ -120,6 +120,14 @@
 .todo__notes > * {
   margin: 0 0 40px 0;
 }
+.note__head{
+padding: 20px 30px;
+background: linear-gradient(to bottom, #232526, #414345);
+}
+.note__body{
+padding: 15px 30px;
+margin-bottom: auto;
+}
 .note {
   flex: 0 1 45%;
   background: linear-gradient(to bottom, #ece9e6, #ffffff);
@@ -128,32 +136,37 @@
   position: relative;
   transition: 0.4s ease;
   box-shadow: 0 0 5px rgb(172, 170, 170);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 .note__date {
-  padding: 20px 30px;
-  background: linear-gradient(to bottom, #232526, #414345);
   color: #eee6e6;
   font-weight: 500;
 }
-.note__button_favorite {
+.note__icon {
   position: absolute;
   top: 20px;
   right: 40px;
   font-size: 18px;
   background: #eee6e6;
   background-clip: text;
-  transition: 0.3s;
+//   transition: 0.3s;
   .fas {
     color: transparent;
   }
-  :hover {
-    background: linear-gradient(to right, #ff512f, #dd2476);
-    background-clip: text;
-    /*!!!!!!!!!! По нажатия кнопка должна окрашиваться в такой цвет */
-  }
+//   :hover {
+//     background: linear-gradient(to right, #ff512f, #dd2476);
+//     background-clip: text;
+//     /*!!!!!!!!!! Стили заданы через JS*/
+//   }
+}
+.note__title {
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    font-weight: 500;
 }
 .note__text {
-  padding: 30px;
   font-style: italic;
 }
 .buttons-row {
@@ -162,7 +175,7 @@
   justify-content: flex-end;
   border-top: 1px solid rgb(216, 211, 211);
 }
-.note__button {
+.note__button_favorite {
   padding: 10px 15px;
   border-radius: 10px;
   background: linear-gradient(to right, #ff512f, #dd2476);
@@ -171,9 +184,9 @@
   font-size: 18px;
   font-weight: 700;
 }
-.note__button_edit {
-  margin-right: 15px;
-}
+// .note__button_edit {
+//   margin-right: 15px;
+// }
 @media (max-width: 768px) {
   .todo__notes {
     flex-direction: column;

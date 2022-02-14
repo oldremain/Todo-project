@@ -64,5 +64,4 @@ function clearError($control) {
     $control.classList.remove('invalid');
     $errorElem.remove();
   }
-
 }

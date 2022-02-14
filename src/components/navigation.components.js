@@ -34,7 +34,7 @@ function tabClickHandler(e) {
 
   this.tabs.forEach((tab) => {
     if (tab === activeTab) {
-      activeTab.component.show();
+      tab.component.show();
     } else {
       tab.component.hide();
     }
