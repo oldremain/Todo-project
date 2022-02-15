@@ -51,17 +51,18 @@ function buttonHandler(e) {
     if (candidate) {
       // Нашли наш пост и удаляем запись о нём в localStorage
       $el.textContent = 'Add Favorite';
-      favorites = favorites.filter((p) => p.id !== id); //Получаем массив постов без candidate (или пустой массив, если ни один не прошёл проверку)
+      favorites = favorites.filter((p) => p.id !== id); //Получаем массив постов без candidate (или пустой массив, если ни один не прошёл проверку)   
 
-      document.querySelector(`[data-icon-id="${id}"]`).style.cssText = `background: #eee6e6;
-      -webkit-background-clip: text;`;// Здесь мы просто меняем цвет сердечка при удалении из favorite
+      document.querySelector(`[data-icon-id="${id}"]`).classList.remove('heart-color-show');
+      document.querySelector(`[data-icon-id="${id}"]`).classList.add('heart-color-hide'); // Здесь мы просто меняем цвет сердечка при удалении из favorite
       console.log(favorites);
+
     } else {
       // Добавить пост в localStorage
       $el.textContent = 'Remove Favorite';
       
-      document.querySelector(`[data-icon-id="${id}"]`).style.cssText = `background: linear-gradient(to right, #ff512f, #dd2476);
-      -webkit-background-clip: text;`;
+      document.querySelector(`[data-icon-id="${id}"]`).classList.remove('heart-color-hide');
+      document.querySelector(`[data-icon-id="${id}"]`).classList.add('heart-color-show');
       favorites.push({ id, title }); //запушили в favorites объект
     }
 

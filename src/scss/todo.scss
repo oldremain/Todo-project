@@ -120,13 +120,13 @@
 .todo__notes > * {
   margin: 0 0 40px 0;
 }
-.note__head{
-padding: 20px 30px;
-background: linear-gradient(to bottom, #232526, #414345);
+.note__head {
+  padding: 20px 30px;
+  background: linear-gradient(to bottom, #232526, #414345);
 }
-.note__body{
-padding: 15px 30px;
-margin-bottom: auto;
+.note__body {
+  padding: 15px 30px;
+  margin-bottom: auto;
 }
 .note {
   flex: 0 1 45%;
@@ -151,20 +151,20 @@ margin-bottom: auto;
   font-size: 18px;
   background: #eee6e6;
   background-clip: text;
-//   transition: 0.3s;
+  //   transition: 0.3s;
   .fas {
     color: transparent;
   }
-//   :hover {
-//     background: linear-gradient(to right, #ff512f, #dd2476);
-//     background-clip: text;
-//     /*!!!!!!!!!! Стили заданы через JS*/
-//   }
+  //   :hover {
+  //     background: linear-gradient(to right, #ff512f, #dd2476);
+  //     background-clip: text;
+  //     /*!!!!!!!!!! Стили заданы через JS*/
+  //   }
 }
 .note__title {
-    margin-bottom: 15px;
-    text-transform: uppercase;
-    font-weight: 500;
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  font-weight: 500;
 }
 .note__text {
   font-style: italic;
@@ -183,6 +183,14 @@ margin-bottom: auto;
   background-clip: text;
   font-size: 18px;
   font-weight: 700;
+}
+.heart-color-show {
+  background: linear-gradient(to right, #ff512f, #dd2476);
+  background-clip: text;
+}
+.heart-color-hide {
+  background: #eee6e6;
+  background-clip: text;
 }
 // .note__button_edit {
 //   margin-right: 15px;
