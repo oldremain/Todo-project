@@ -40,6 +40,9 @@ class ApiService {
 
 async function useRequest(request) {
   const response = await fetch(request);
+//   console.log(response)
+//   let obj = await response.json()
+//   console.log(obj)
   return await response.json();
 }
 

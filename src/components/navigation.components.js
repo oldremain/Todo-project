@@ -30,7 +30,7 @@ function tabClickHandler(e) {
   const activeTab = this.tabs.find(({ name }) => {
     return name === e.target.dataset.name;
   });
-  // console.log(activeTab);
+//   console.log(activeTab);
 
   this.tabs.forEach((tab) => {
     if (tab === activeTab) {
@@ -41,5 +41,4 @@ function tabClickHandler(e) {
     // console.log(tab);
     // console.log(activeTab)
   });
-  //   console.log(this);
 }

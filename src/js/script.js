@@ -56,6 +56,5 @@ TABS.registerTabs([
 console.log(TABS);
 console.log(POSTS);
 console.log(CREATE);
-
-// console.log(HOME);
+console.log(FAVORITE);
 console.log(apiService);

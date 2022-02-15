@@ -62,7 +62,7 @@ function buttonHandler(e) {
       
       document.querySelector(`[data-icon-id="${id}"]`).style.cssText = `background: linear-gradient(to right, #ff512f, #dd2476);
       -webkit-background-clip: text;`;
-      favorites.push({ id, title }); 
+      favorites.push({ id, title }); //запушили в favorites объект
     }
 
     localStorage.setItem('favorites', JSON.stringify(favorites)); // делаем запись в localStorage о постах, которые добавлены в favorites

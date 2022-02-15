@@ -2,7 +2,6 @@ export class Form {
   constructor(form, controls) {
     this.form = form;
     this.controls = controls;
-    console.log(this.form);
   }
 
   value() {
