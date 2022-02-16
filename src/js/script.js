@@ -12,6 +12,9 @@ import { apiService } from '../services/app.service';
 // const HOME = new HomeButton('home-btn', header);
 
 new HeaderComponents('header');
+localStorage.getItem('visited')
+  ? document.querySelector('.todo').classList.remove('hide')
+  : console.log('header is no visited');
 
 const POSTS = new PostsComponents('posts');
 const CREATE = new CreateComponents('create');
@@ -37,20 +40,19 @@ TABS.registerTabs([
 // Табы для маленького экрана
 const TABS_SMALLSCREEN = new NavigationComponents('tabs-sm');
 TABS_SMALLSCREEN.registerTabs([
-    {
-        name: 'posts',
-        component: POSTS
-    },
-    {
-        name: 'create',
-        component: CREATE
-    },
-    {
-        name: 'favorite',
-        component: FAVORITE
-    }
+  {
+    name: 'posts',
+    component: POSTS,
+  },
+  {
+    name: 'create',
+    component: CREATE,
+  },
+  {
+    name: 'favorite',
+    component: FAVORITE,
+  },
 ]);
-
 
 console.log(TABS);
 console.log(POSTS);

@@ -18,8 +18,7 @@ export class HeaderComponents extends Component {
 
 function buttonHandler() {
   this.hide();
-
+  document.querySelector('.todo').classList.remove('hide'); // Открываем секцию
+  localStorage.setItem('visited', JSON.stringify('header page is visited'));
   // Заносим в LocalStorage, что мы посетили страницу
-  localStorage.setItem('visited', JSON.stringify('header page is visited')); 
 }
-
