@@ -1,4 +1,4 @@
-import { Component } from '../core/component.js';
+import { Component } from '../core/component';
 
 export class HeaderComponents extends Component {
   constructor(id) {

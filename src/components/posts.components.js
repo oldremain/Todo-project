@@ -13,6 +13,7 @@ export class PostsComponents extends Component {
   }
 
   async onShow() {
+    this.$el.innerHTML = ''; // Чтобы при клике на вкладку не дублировалось содержимое
     //Определим, когда именно мы открываем вкладку
     const fbdata = await apiService.fetchPost();
     console.log(fbdata); // получаем ответ от сервера в виде объекта с хэш-суммами, которые являются объектами (ссылками на наши посты)
@@ -53,19 +54,17 @@ function buttonHandler(e) {
       $el.textContent = 'Add Favorite';
       favorites = favorites.filter((p) => p.id !== id); //Получаем массив постов без candidate (или пустой массив, если ни один не прошёл проверку)   
 
-      document.querySelector(`[data-icon-id="${id}"]`).classList.remove('heart-color-show');
-      document.querySelector(`[data-icon-id="${id}"]`).classList.add('heart-color-hide'); // Здесь мы просто меняем цвет сердечка при удалении из favorite
+      document.querySelector(`[data-icon-id="${id}"]`).classList.toggle('heart-color-show'); // Здесь мы просто меняем цвет сердечка при удалении из favorite
       console.log(favorites);
 
     } else {
       // Добавить пост в localStorage
       $el.textContent = 'Remove Favorite';
       
-      document.querySelector(`[data-icon-id="${id}"]`).classList.remove('heart-color-hide');
-      document.querySelector(`[data-icon-id="${id}"]`).classList.add('heart-color-show');
+      document.querySelector(`[data-icon-id="${id}"]`).classList.toggle('heart-color-show');
       favorites.push({ id, title }); //запушили в favorites объект
     }
 
-    localStorage.setItem('favorites', JSON.stringify(favorites)); // делаем запись в localStorage о постах, которые добавлены в favorites
+    localStorage.setItem('favorites', JSON.stringify(favorites)); // обновляем запись в localStorage о постах, которые добавлены в favorites
   }
 }

@@ -1,4 +1,4 @@
-import { Component } from '../core/component.js';
+import { Component } from '../core/component';
 
 export class NavigationComponents extends Component {
   constructor(id) {

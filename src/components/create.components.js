@@ -1,6 +1,6 @@
-import { Component } from '../core/component.js';
-import { Form } from '../core/form.js';
-import { Validators } from '../core/validators.js';
+import { Component } from '../core/component';
+import { Form } from '../core/form';
+import { Validators } from '../core/validators';
 import { apiService } from '../services/app.service';
 
 export class CreateComponents extends Component {

@@ -45,7 +45,6 @@
   line-height: 142%;
   color: #eee6e6;
 }
-
 @media (max-width: 768px) {
   .logo__link {
     font-size: 40px;
@@ -61,7 +60,6 @@
 }
 
 //---------------------content---------------------//
-
 .header__content {
   height: 85vh;
   display: flex;
@@ -156,8 +154,8 @@
     padding: 15px 40px;
   }
 }
-//----------------pseudo github-------------------//
 
+//----------------pseudo github-------------------//
 .header__aside {
   position: absolute;
   top: 35%;
@@ -181,7 +179,6 @@
     top: 45%;
   }
 }
-
 .hide {
     display: none;
 }

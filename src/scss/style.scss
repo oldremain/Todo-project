@@ -1,7 +1,7 @@
 @import './reset.scss';
 @import 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css';
-// @import './header.scss';
-// @import './todo.scss';
+@import './header.scss';
+@import './todo.scss';
 
 body {
   font-family: 'Roboto', sans-serif;
@@ -13,6 +13,3 @@ body {
   margin: 0 auto;
 }
 
-// .hide {
-//   display: none;
-// }
