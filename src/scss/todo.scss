@@ -3,6 +3,7 @@
   padding: 20px 0 60px;
   position: relative;
   height: 100%;
+  
 }
 .todo__tabs {
   display: flex;
@@ -96,7 +97,7 @@
   justify-content: space-between;
   flex-wrap: wrap;
 }
-.todo__notes > *:not(:last-child) {
+#posts > * {
   margin: 0 auto 40px 0;
 }
 .note__head {
@@ -114,7 +115,7 @@
   overflow: hidden;
   position: relative;
   transition: 0.4s ease;
-  box-shadow: 0 0 5px rgb(172, 170, 170);
+  box-shadow: 0 0 3px rgb(172, 170, 170);
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -180,7 +181,7 @@
   .note {
     max-width: 300px;
   }
-  .todo__notes > * {
+  #posts > * {
     margin: 0 0 30px 0;
   }
 }
