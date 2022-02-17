@@ -8,7 +8,7 @@ export function renderPost(post, options = {}) {
   console.log(favorites); // Для начала проверим localeStorage. Есть ли у нас там записи о постах, которые мы добавили в избранное
 
   const candidate = favorites.find((p) => p.id === post.id);
-  console.log(candidate); // Теперь нам нужно произвести сверку поста, который рендерим на наличие о нём записи в localeStorage. В зависимости от этого мы будем отображать кнопку с соответствующей надписью. !Для favorite.component нам эти дейстивя не актуальны, т.к.параметры кнопки мы передаём в функцию как false
+  console.log(candidate); // Теперь нам нужно произвести сверку поста, который рендерим на наличие о нём записи в localeStorage. В зависимости от этого мы будем отображать кнопку с соответствующей надписью, а также подсвечивать либо нет 'наше сердечко'  Для favorite.component нам эти дейстивя не актуальны, т.к.параметры кнопки мы передаём в функцию как false
 
   const button = candidate
     ? `<button class="note__button_favorite" data-id="${post.id}" data-title="${post.title}">

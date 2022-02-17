@@ -59,3 +59,4 @@ console.log(POSTS);
 console.log(CREATE);
 console.log(FAVORITE);
 console.log(apiService);
+console.log(TABS_SMALLSCREEN);

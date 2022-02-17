@@ -24,7 +24,9 @@ export class Form {
     let isFormValid = true;
 
     Object.keys(this.controls).forEach((control) => {
-      const validators = this.controls[control]; // В переменную получаем наши валидаторы из объекта 'this.controls по ключу'
+      const validators = this.controls[control]; // В переменную получаем наши валидаторы из объекта 'this.controls по ключу' в виде массива
+    //   console.log(validators);
+
       let isValid = true; // Создаём  переменную для конкретного валидатора
 
       validators.forEach((validator) => {

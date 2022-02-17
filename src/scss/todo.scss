@@ -3,7 +3,6 @@
   padding: 20px 0 60px;
   position: relative;
   height: 100%;
-  
 }
 .todo__tabs {
   display: flex;
@@ -34,6 +33,7 @@
   background: #424242;
   color: #eceaea;
   transform: translateY(6px);
+  box-shadow: 0 0 3px rgb(219, 192, 219);
 }
 .tabs__item.tabs__item_fav::after {
   content: '\f004';
@@ -362,7 +362,7 @@ label {
   color: #ece5e5;
   transition: all 0.3s ease;
   &:hover {
-    box-shadow:  0px 0px 3px rgb(211, 208, 208);
+    box-shadow: 0px 0px 3px rgb(211, 208, 208);
     transform: scale(1.02);
   }
 }
@@ -375,7 +375,9 @@ label {
 }
 .favorite__nothing {
   font-size: 22px;
-  color: #424242;
+  color: #dfdddd;
+  text-shadow: 0 0 3px #c032c5;
+  letter-spacing: 2px;
 }
 
 //------------------------------Home-button-------------------------//

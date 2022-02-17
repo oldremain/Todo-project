@@ -29,9 +29,9 @@ async function linkClickHandler(e) {
   e.preventDefault();
 
   if (e.target.classList.contains('js-link')) {
+    this.$el.innerHTML = ''; // убираем с экрана все наши заметки
+
     const postId = e.target.dataset.id;
-    this.$el.innerHTML = '';
-    
     const post = await apiService.fetchPostById(postId);
     console.log(post);
 

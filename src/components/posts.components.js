@@ -13,8 +13,8 @@ export class PostsComponents extends Component {
   }
 
   async onShow() {
-    this.$el.innerHTML = ''; // Чтобы при клике на вкладку не дублировалось содержимое
-    //Определим, когда именно мы открываем вкладку
+    this.$el.innerHTML = ''; // Чтобы при повторном клике на вкладку не дублировалось содержимое
+
     const fbdata = await apiService.fetchPost();
     console.log(fbdata); // получаем ответ от сервера в виде объекта с хэш-суммами, которые являются объектами (ссылками на наши посты)
 
@@ -32,7 +32,7 @@ export class PostsComponents extends Component {
 }
 
 function buttonHandler(e) {
-    // После рендера займёмся работой с localStorage и обработке событий на кнопке нашей'заметки'
+    // После рендера и вывода на страницу наших заметок займёмся работой с localStorage и обработке событий на кнопке нашей'заметки'
   const $el = e.target;
   console.log($el);
 
