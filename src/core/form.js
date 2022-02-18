@@ -56,7 +56,7 @@ function setError($control) {
   $control.insertAdjacentHTML('afterend', error);
 }
 
-function clearError($control) {
+export function clearError($control) {
   const $errorElem = $control.nextElementSibling; // Получаем нашу 'p'(элемент ошибки) и проверяем на наличие в документе. Если элемент отсутствует в документе то выходим из функции. Если присутствует удаляем элемент и класс 'invalid' у 'input'
 
   if (!$errorElem) {

@@ -2,6 +2,7 @@ import { Component } from '../core/component';
 import { Form } from '../core/form';
 import { Validators } from '../core/validators';
 import { apiService } from '../services/app.service';
+import { clearError } from '../core/form';
 
 export class CreateComponents extends Component {
   constructor(id) {
@@ -15,6 +16,15 @@ export class CreateComponents extends Component {
     });
     this.$el.addEventListener('submit', submitHandler.bind(this));
     // console.log(Object.keys(this.form.value()));
+  }
+
+  onShow() {
+      //Убираем сообщение об ошибке при переключении табов и очищаем поля
+      this.form.clear();
+      Object.keys(this.form.controls).forEach((control) => clearError(this.$el[control]));
+  }
+  onHide() {
+    this.form.clear();
   }
 }
 
