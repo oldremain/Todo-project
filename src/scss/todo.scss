@@ -153,7 +153,7 @@
 .buttons-row {
   display: flex;
   padding: 20px 30px;
-  justify-content: flex-end;
+  justify-content: space-between;
   border-top: 1px solid rgb(216, 211, 211);
 }
 .note__button_favorite {
@@ -172,6 +172,22 @@
 // .note__button_edit {
 //   margin-right: 15px;
 // }
+.note__button_delete {
+  background-color: transparent;
+  &::after {
+    content: '\f2ed';
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    font-size: 16px;
+    opacity: 0.5;
+    color: #424242;
+    margin-left: auto;
+    transition: all 0.3s ease;
+  }
+  &:hover::after {
+    opacity: 1;
+  }
+}
 @media (max-width: 768px) {
   .todo__notes {
     flex-direction: column;

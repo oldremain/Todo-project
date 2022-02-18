@@ -44,17 +44,17 @@ async function linkClickHandler(e) {
 }
 
 function renderList(list = []) {
-  if (list.length) {
-    return `
-            <ul class="favorite__list favorite-list">
-                 ${list
-                   .map(
-                     (i) =>
-                       `<li class="favorite-list__item"><a href="#" class="js-link" data-id="${i.id}">${i.title}</a></li>`
-                   )
-                   .join(' ')}            
-            </ul>`;
-  } else {
+  if (list === null || list.length === 0) {
     return `<div class="favorite__nothing">There is nothing here yet &#128553;</div>`;
+  } else {
+    return `
+        <ul class="favorite__list favorite-list">
+             ${list
+               .map(
+                 (i) =>
+                   `<li class="favorite-list__item"><a href="#" class="js-link" data-id="${i.id}">${i.title}</a></li>`
+               )
+               .join(' ')}            
+        </ul>`;
   }
 }
